@@ -4,7 +4,7 @@ function TableBody(props) {
   const { users } = props.users;
   const rowData = users.map(user => {
     return (
-      <tr>
+      <tr key={user.id}>
         <td className="border-left border-right">{user.lastName}</td>
         <td className="border-left border-right">{user.firstName}</td>
         <td className="border-left border-right">{user.age}</td>
