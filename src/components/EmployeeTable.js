@@ -13,11 +13,12 @@ function EmployeeTable() {
       let {
         name: { first: firstName, last: lastName },
         email,
+        login: { uuid: id },
         dob: { age },
         phone: phoneNumber,
         picture: { thumbnail }
       } = user;
-      return { firstName, lastName, email, age, phoneNumber, thumbnail };
+      return { firstName, lastName, email, id, age, phoneNumber, thumbnail };
     });
     data.sort((a, b) => a.lastName.localeCompare(b.lastName));
     setUsers({ users: data });
