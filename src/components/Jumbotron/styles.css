@@ -1,0 +1,11 @@
+.jumbotron {
+  background-image: url("./shridhar-gupta-dZxQn4VEv2M-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron-info {
+  background-color: rgba(0, 0, 0, 0.33);
+  color: white;
+  border-color: #c7ad89 !important;
+}
