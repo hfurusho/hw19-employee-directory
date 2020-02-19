@@ -1,7 +1,7 @@
 import React from "react";
 
 function TableBody(props) {
-  const { users } = props.users;
+  const users = props.users;
   const rowData = users.map(user => {
     return (
       <tr key={user.id}>
